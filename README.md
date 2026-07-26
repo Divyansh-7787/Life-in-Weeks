@@ -51,17 +51,17 @@ Start the local development server:npm run dev
 Open http://localhost:5173 in your browser to view the application.
 📁 Repository Structure
 Life-in-Weeks/
-├── public/                # Static assets (favicons, SVG icons)[cite: 1]
+├── public/                # Static assets (favicons, SVG icons)
 ├── src/
-│   ├── assets/            # Project images and graphics[cite: 1]
-│   ├── App.css            # Component styles[cite: 1]
-│   ├── App.jsx            # Main React component & business logic[cite: 1]
-│   ├── index.css          # Global styling rules[cite: 1]
-│   └── main.jsx           # React DOM application entry point[cite: 1]
-├── index.html             # HTML template[cite: 1]
-├── package.json           # Node project scripts & dependencies[cite: 1]
-├── vite.config.js         # Vite configuration[cite: 1]
-└── .oxlintrc.json         # Linter rules configuration[cite: 1]
+│   ├── assets/            # Project images and graphics
+│   ├── App.css            # Component styles
+│   ├── App.jsx            # Main React component & business logic
+│   ├── index.css          # Global styling rules
+│   └── main.jsx           # React DOM application entry point
+├── index.html             # HTML template
+├── package.json           # Node project scripts & dependencies
+├── vite.config.js         # Vite configuration
+└── .oxlintrc.json         # Linter rules configuration
 🔮 Future Improvements & New Features
 Here are planned features and potential enhancements for future releases:
 Interactive Visual Grid: Render a 52x90 grid of boxes representing every week of a 90-year life, coloring filled boxes (past) vs. empty boxes (future).
