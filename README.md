@@ -31,25 +31,75 @@ When a user enters their current age into the input field, React captures this v
 ```jsx
 const [age, setAge] = useState('');
 ```
-Every time the input changes, React re-renders the component instantly to reflect updated time calculations without needing a page refresh.3. Calculation LogicAssuming a benchmark target lifespan of 90 years, the underlying arithmetic converts the remaining years into days, weeks, and months:
-Years Remaining = 90 - Current Age 
-Days Left = Years Remaining  * 365
-Weeks Left = Years Remaining * 52
-Months Left = Years Remaining * 12
-🛠️ Tech Stack
-Frontend: React.js
-Build Tool: Vite
-Styling: CSS3 (App.css, index.css)
-Linter: Oxlint
-🚀 Getting Started
-Prerequisites : Ensure you have Node.js (v16 or higher) installed on your system.
-Installation & Local RunClone the repository:
-git clone [https://github.com/Divyansh-7787/Life-in-Weeks.git](https://github.com/Divyansh-7787/Life-in-Weeks.git)
-Navigate to the project directory:cd Life-in-Weeks
-Install dependencies:npm install
-Start the local development server:npm run dev
-Open http://localhost:5173 in your browser to view the application.
-📁 Repository Structure
+Every time the input changes, React re-renders the component instantly to reflect updated time calculations without needing a page refresh.
+
+### 3. Calculation Logic
+
+Assuming a benchmark target lifespan of **90 years**, the underlying arithmetic converts the remaining years into days, weeks, and months:
+
+```text
+Years Remaining = 90 - Current Age
+Days Left        = Years Remaining × 365
+Weeks Left       = Years Remaining × 52
+Months Left      = Years Remaining × 12
+```
+
+> **Note:** The calculations are approximate and are intended for visualization purposes. Leap years and exact birth dates are not currently considered.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js
+- **Build Tool:** Vite
+- **Styling:** CSS3 (`App.css`, `index.css`)
+- **Linter:** Oxlint
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+Ensure you have **Node.js (v16 or higher)** installed on your system.
+
+### Installation & Local Setup
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Divyansh-7787/Life-in-Weeks.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd Life-in-Weeks
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm run dev
+```
+
+5. Open your browser and visit:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 📁 Repository Structure
+
+```text
 Life-in-Weeks/
 ├── public/                # Static assets (favicons, SVG icons)
 ├── src/
@@ -57,18 +107,52 @@ Life-in-Weeks/
 │   ├── App.css            # Component styles
 │   ├── App.jsx            # Main React component & business logic
 │   ├── index.css          # Global styling rules
-│   └── main.jsx           # React DOM application entry point
+│   └── main.jsx           # React application entry point
 ├── index.html             # HTML template
-├── package.json           # Node project scripts & dependencies
+├── package.json           # Project dependencies & scripts
 ├── vite.config.js         # Vite configuration
-└── .oxlintrc.json         # Linter rules configuration
-🔮 Future Improvements & New Features
-Here are planned features and potential enhancements for future releases:
-Interactive Visual Grid: Render a 52x90 grid of boxes representing every week of a 90-year life, coloring filled boxes (past) vs. empty boxes (future).
-Exact Date-of-Birth Picker: Allow users to select their exact birthdate via a calendar input for precise, leap-year-aware calculations using JavaScript Date objects.
-Custom Target Lifespan: Allow users to adjust the default target age (e.g., set expected lifespan to 80, 85, or 100 years).
-Life Milestones & Annotations: Enable users to click on specific week blocks to log major personal milestones (e.g., graduation, career change, marriage). 
-Dark / Light Theme Toggle: Implement dynamic theme switching compatible with modern CSS variables and user preferences.
-Export & Share Feature: Option to download a visual high-resolution PNG image of your personalized life grid poster.
-🤝 Contributing
-Contributions are always welcome! If you'd like to add a feature or report a bug, feel free to open an issue or submit a pull request.
+└── .oxlintrc.json         # Oxlint configuration
+```
+
+---
+
+## 🔮 Future Improvements
+
+Planned enhancements for future releases include:
+
+- 🎨 **Interactive Life Grid** — Display a **90 × 52** grid representing every week of a 90-year life, highlighting completed and remaining weeks.
+- 📅 **Date of Birth Picker** — Perform precise calculations using the user's exact birth date, including leap years.
+- 🎯 **Custom Life Expectancy** — Allow users to choose their own target lifespan (e.g., 80, 85, or 100 years).
+- 📝 **Life Milestones** — Let users annotate significant events such as graduation, career changes, marriage, or travel.
+- 🌙 **Dark / Light Theme** — Add a theme switcher using CSS variables and system preferences.
+- 📤 **Export & Share** — Download or share a personalized life grid as a high-resolution PNG image.
+
+---
+
+## 🤝 Contributing
+
+Contributions are always welcome!
+
+If you'd like to improve this project:
+
+1. Fork the repository.
+2. Create a new feature branch.
+3. Commit your changes.
+4. Push the branch.
+5. Open a Pull Request.
+
+You can also open an issue to report bugs, suggest improvements, or request new features.
+
+---
+
+## ⭐ Support
+
+If you found this project helpful or inspiring, consider giving it a ⭐ on GitHub. It helps others discover the project and motivates future development.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+Feel free to use, modify, and distribute it in accordance with the license terms.
